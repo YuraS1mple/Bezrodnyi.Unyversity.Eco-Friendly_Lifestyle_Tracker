@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eco-Friendly Lifestyle Tracker</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'register' %}">Register</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="dashboard">
+                <div class="score">
+                    <h1>028</h1>
+                    <p>SP</p>
+                </div>
+            </div>
+            <div class="background">
+                <img src="{% static 'main/images/example_image.png' %}" alt="Nature">
+            </div>
+            <div class="icons">
+                <div class="icon"><img src="{% static 'main/images/example_image.png' %}" alt="Icon 1"><p>Feature 1</p></div>
+                <div class="icon"><img src="{% static 'main/images/example_image.png' %}" alt="Icon 2"><p>Feature 2</p></div>
+                <div class="icon"><img src="{% static 'main/images/example_image.png' %}" alt="Icon 3"><p>Feature 3</p></div>
+                <div class="icon"><img src="{% static 'main/images/example_image.png' %}" alt="Icon 4"><p>Feature 4</p></div>
+                <div class="icon"><img src="{% static 'main/images/example_image.png' %}" alt="Icon 5"><p>Feature 5</p></div>
+            </div>
+        </main>
+    </div>
+    <script src="{% static 'main/js/scripts.js' %}"></script>
+</body>
+</html>
