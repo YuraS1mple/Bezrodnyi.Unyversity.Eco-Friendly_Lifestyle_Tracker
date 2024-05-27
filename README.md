@@ -21,3 +21,6 @@ Add your task decomposition here.
 - Setup Azure SQL Database
 - Set up Continuous Integration/Continuous Delivery pipeline
 - Draft Getting Started documentation ✓
+
+### Mukha Yura
+- [Project link](https://github.com/YuraS1mple/CloudTune-Studio/pull/1)
