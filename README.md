@@ -15,9 +15,9 @@ Add your project documentation here.
 Add your task decomposition here.
 
 ### Week 1:
-- Implement basic user registration and login
-- Create basic project structure in a Github repository
-- Setup Azure Web App
+- Implement basic user registration and login ✓
+- Create basic project structure in a Github repository ✓
+- Setup Azure Web App ✓
 - Setup Azure SQL Database
 - Set up Continuous Integration/Continuous Delivery pipeline
-- Draft Getting Started documentation
+- Draft Getting Started documentation ✓
